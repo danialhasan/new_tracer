@@ -1,0 +1,8 @@
+{
+  "name": "new_tracer",
+  "template": "Default",
+  "isConfigured": {
+    "client": false,
+    "server": false
+  }
+}
