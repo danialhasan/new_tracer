@@ -1,12 +1,24 @@
+<script>
+import DarkModeIcon from "@/components/DarkModeIcon.vue";
+
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    DarkModeIcon,
+  },
+};
+</script>
+
 <template>
-  <div>
-    <header class="bg-white shadow" v-if="$route.meta.title">
-      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold leading-tight text-gray-900">{{ $route.meta.title }}</h1>
-      </div>
+  <div class="">
+    <header class="w-full h-auto flex justify-end p-8">
+      <!-- change dark mode icon here -->
+      <dark-mode-icon />
     </header>
     <main>
-      <router-view/>
+      <router-view />
     </main>
   </div>
 </template>
