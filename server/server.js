@@ -7,7 +7,7 @@ require('dotenv').config();
 if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === undefined) {
     process.env.ACCESS_CONTROL_ALLOW_ORIGIN = 'http://localhost:3000'
 } else if (process.env.NODE_ENV === "production") {
-    process.env.ACCESS_CONTROL_ALLOW_ORIGIN = 'https://unsplash-clone-dh.netlify.app'
+    process.env.ACCESS_CONTROL_ALLOW_ORIGIN = 'https://new-tracer-dh.netlify.app/'
 }
 
 // Configuring port

@@ -5,7 +5,7 @@ export default {
   data() {
     return {
       serverURL: "http://localhost:9000",
-      // serverURL: "http://localhost:9000",
+      // serverURL: "https://new-tracer-dh.herokuapp.com",
     };
   },
   methods: {
