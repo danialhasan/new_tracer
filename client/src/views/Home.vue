@@ -28,7 +28,7 @@ export default {
 <template>
   <div class="w-full min-h-full text-center">
     <h1 class="font-bold text-4xl pt-12 md:mt-24 md:text-5xl px-4">
-      Crypto Address Tracer
+      Crypto Address Tracer!
     </h1>
     <div class="w-full md:max-w-[500px] lg:max-w-[600px] md:mx-auto px-7 pt-7">
       <form
