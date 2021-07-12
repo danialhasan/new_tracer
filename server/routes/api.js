@@ -9,7 +9,7 @@ router.use((req, res, next) => {
 })
 
 router.get('/', (req, res) => {
-  res.send("This is the root handler!.")
+  res.send("This is the /api root handler.")
 });
 
 router.get('/address', async (req, res) => {

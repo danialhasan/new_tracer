@@ -18,12 +18,21 @@ const app = express();
 // Configure middlewares
 app.use(express.json());
 
-
+express.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', `${process.env.ACCESS_CONTROL_ALLOW_ORIGIN}`);
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With")
+    next()
+})
 
 app.set('view engine', 'html');
 
 // Static folder
 app.use(express.static(__dirname + '/views/'));
+
+app.get('/', (req, res) => {
+    res.send("This is the root handler. Hello World!")
+})
 
 // Defining route middleware
 app.use('/api', require('./routes/api'));
