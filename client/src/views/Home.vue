@@ -4,7 +4,8 @@ export default {
   name: "Home",
   data() {
     return {
-      devServerURL: "http://localhost:9000",
+      serverURL: "http://localhost:9000",
+      // serverURL: "http://localhost:9000",
     };
   },
   methods: {
